@@ -1,0 +1,2 @@
+adr=http://itas.pstu.ru/index.php?mode=announcements/anniversary&lang=rus
+&tmp="Для открытия страницы в новом окне _blank, для открытия в томже окне _self"

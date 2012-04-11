@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="koi8-r"?>
+<document>
+<menu1 section="depNews" name="Новости" short-name="Новости" menuid="2">
+  <menu2 section="companies">
+    <menu3 section="ibm"/>
+    <menu3 section="microsoft"/>
+    <menu3 section="oracle"/>
+    <menu3 section="sap"/>
+    <menu3 section="sun"/>
+  </menu2>
+  <menu2 section="systems">
+    <menu3 section="kis"/>
+    <menu3 section="asutp"/>
+    <menu3 section="sapr"/>
+    <menu3 section="gis"/>
+    <menu3 section="intlgS"/>
+    <menu3 section="parallel"/>
+  </menu2>
+  <menu2 section="itSecurity">
+    <menu3 section="itSecVulnerabil"/>
+    <menu3 section="itSecVirus"/>
+    <menu3 section="itSecSurv"/>
+  </menu2>
+  <menu2  section="net">
+    <menu3 section="internet"/>
+    <menu3 section="wirelessNet"/>
+    <menu3 section="telecom"/>
+  </menu2>
+  <menu2  section="soft">
+    <menu3 section="java"/>
+    <menu3 section="dotNET"/>
+    <menu3 section="developSurv"/>
+    <menu3 section="linux"/>
+    <menu3 section="winServer"/>
+    <menu3 section="winVista"/>
+    <menu3 section="windowsSurv"/>
+    <menu3 section="mySQL"/>
+    <menu3 section="msSQLServer"/>
+    <menu3 section="msExchange"/>
+    <menu3 section="softSurv"/>
+  </menu2>
+  <menu2  section="hard"/>
+  <menu2  section="science"/>
+</menu1>
+</document>

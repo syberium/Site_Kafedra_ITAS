@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="koi8-r"?>
+<document>
+  <fields>
+    <author>
+      <title>Автор(ы)</title>
+      <type>CMR</type>
+    </author>
+    <title>
+      <title>Название</title>
+      <type>CR</type>
+    </title>
+    <published>
+      <title>Название источника</title>
+      <type>C</type>
+    </published>
+    <place>
+      <title>Место издания, изд-во</title>
+      <type>C</type>
+    </place>
+    <year>
+      <title>Год издания</title>
+      <type>NR</type>
+    </year>
+    <pages>
+      <title>Кол-во cтраниц</title>
+      <type>N</type>
+    </pages>
+  </fields>
+  <publications>
+    <item>
+      <author>Белковский С.В.</author>
+      <title>Обзор систем автоматизации ведущих фирм, представленных на российском рынке</title>
+      <published>Сб. научных трудов Информационные управляющие системы</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <pages>4</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Белковский С.В.</author>
+      <published>Сб. научных трудов Информационные управляющие системы</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <title>К вопросу о фрактальном сжатии и применение нейронных сетей.</title>
+      <pages>4</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Кавера Т.Ю.</author>
+      <published>Сб. научных трудов Информационные управляющие системы</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <title>Оптимизация сетевых решений: постановка задачи</title>
+      <pages>4</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Кузнецов Д.Б.</author>
+      <published>Сб. научных трудов Информационные управляющие системы</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <title>Свободная система управления базами данных</title>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Лясин В.Н.</author>
+      <title>Процедура формирования оптимальной обучающей выборки в непараметрических задачах распознания</title>
+      <published>Сб. научных трудов Информационные управляющие системы</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <pages>4</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Низамутдинов О.Б.</author>
+      <author>Петров Е.Ю.</author>
+      <published>Сб. научных трудов Информационные управляющие системы</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <title>Формулировка некоторых задач оптимального управления матер-м потоком</title>
+      <pages>4</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Лобашов М.В.</author>
+      <title>Использование глобальных информационных сетей для автоматизации работы почтовых служб</title>
+      <published>Сб. научных трудов Информационные управляющие системы</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <pages>5</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Гладков В.П.</author>
+      <title>Решение задач на совместную обработку одномерных массивов</title>
+      <published>Сб. научных трудов Информационные управляющие системы</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <pages>3</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Гладков В.П.</author>
+      <author>Кулютникова Е.А.</author>
+      <title>Пособие по информатике для самообразования</title>
+      <published>Учебное пособие</published>
+      <place>г. Пермь, 1998 г.</place>
+      <pages>127</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Гладков В.П.</author>
+      <title>Конспект лекций по программированию</title>
+      <published>Конспект лекций</published>
+      <place>г. Пермь, 1998 г.</place>
+      <pages>216</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Гладков В.П.</author>
+      <title>Курс лабораторных работ по программированию</title>
+      <published>Учебное пособие</published>
+      <place>г. Пермь, 1998 г.</place>
+      <pages>153</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Липатов И.Н.</author>
+      <title>Сравнительная оценка качества работы обычного и адаптивного цифровых сглаживающих фильтров</title>
+      <published>Деп. в ВИНИТИ N713-В98</published>
+      <place>Г. Москва, 1998 г.</place>
+      <pages>31</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Соловьев А.Е.</author>
+      <title>Конспект лекций по курсу "Специальная математика"</title>
+      <published>Конспект лекций</published>
+      <place>ПГТУ (машин. вид)</place>
+      <pages>100</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Шкляев М.А.</author>
+      <author>Мухин О.И.</author>
+      <author>Баяндин Д.В.</author>
+      <title>Электронный учебник "Виртуальная физика", ч I.</title>
+      <published>Электрон. уч. пособие</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <pages>200</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Мухин О.И.</author>
+      <author>Мыльников Л.А.</author>
+      <title>Сервер РЦИ ПГТУ "Лаборатория моделирования"</title>
+      <published>Сайт</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <pages>100</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Мухин О.И.</author>
+      <title>Конспект лекций по курсу "Моделирование систем" (Сервер АСУ ПГТУ)</title>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <published>Конспект лекций</published>
+      <pages>58</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Мухин О.И.</author>
+      <author>Шелемехов А.А.</author>
+      <author>Носков В.А.</author>
+      <title>Среда для проектирования и программирования "Stratum - 2000".</title>
+      <published>Свидетельство</published>
+      <place>г. Москва, РосАПО, 1998 г.</place>
+      <pages>60</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Гольдштейн А.Л.</author>
+      <title>Интеграция библиотек на базе новых информационных технологий</title>
+      <published>Материалы 5ой юбилейной международной конференции "Библиотеки и ассоциации в меняющемся мире: новые технологии и новые формы сотрудничества"</published>
+      <place>Украина, г. Судак, 1998 г., т. 1</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Артемов Н.</author>
+      <title>Компьютерное пиратство - пути преодоления</title>
+      <published>Сборник научных трудов</published>
+      <place>г. Пермь, ГосНИИУМС, 1998 г.</place>
+      <pages>3</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Артемов Н.</author>
+      <author>Корнеев В.</author>
+      <author>Дылдин П.</author>
+      <title>Проблемы реорганизации автоматизированных систем управления предприятием и создания корпоративных информационных систем</title>
+      <published>Сборник научных трудов</published>
+      <place>г. Пермь, ГосНИИУМС, 1998 г.</place>
+      <pages>14</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Курушин Д.</author>
+      <author>Нестерова Н.</author>
+      <author>Низамутдинов О.</author>
+      <title>Проект обучающей системы с использованием технологий искусственного интеллекта</title>
+      <published>Сборник научных трудов</published>
+      <place>г. Пермь, ГосНИИУМС, 1998 г.</place>
+      <pages>4</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Киселев С.</author>
+      <title>Эволюция и управление предприятием</title>
+      <published>Сборник научных трудов</published>
+      <place>г. Пермь, ГосНИИУМС, 1998 г.</place>
+      <pages>6</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Колосницын М.</author>
+      <author>Соснин А.</author>
+      <title>Проблема принятия решений и интеллектуальный анализ данных</title>
+      <published>Сборник научных трудов</published>
+      <place>г. Пермь, ГосНИИУМС, 1998 г.</place>
+      <pages>10</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Краснобаев Л.</author>
+      <author>Краснобаев В.</author>
+      <title>Дополнительные исследования факторов, влияющих на вероятность возникновения перемежающихся отказов каналов ввода-вывода</title>
+      <published>Сборник научных трудов</published>
+      <place>г. Пермь, ГосНИИУМС, 1998 г.</place>
+      <pages>3</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Низамутдинов О.Б.</author>
+      <author>Гаспер Б.С.</author>
+      <author>Аникин А.А.</author>
+      <title>Элементы программирования систем тренажа</title>
+      <published>Журнал N18 Механика на машините</published>
+      <place>г. Варна, 1997 г.</place>
+      <pages>1</pages>
+      <year>1997</year>
+    </item>
+    <item>
+      <author>Низамутдинов О.Б.</author>
+      <author>Аникин А.А.</author>
+      <author>Тиунов И.И.</author>
+      <title>Объектно-ориентированная методология в разработке компьютерных тренажеров</title>
+      <published>Журнал N18 Механика на машините</published>
+      <place>г. Варна, 1997 г.</place>
+      <pages>1</pages>
+      <year>1997</year>
+    </item>
+    <item>
+      <author>Бордюже В.В.</author>
+      <title>Построение материально-информационных моделей произ-х систем с использованием CASE- средств</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>1</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Рубцов Ю.Ф.</author>
+      <author>Файзрахманов Р.А.</author>
+      <title>Динамические модели функционирования и управления пр-м</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Соловьев В. Э.</author>
+      <author>Соловьев Н.В.</author>
+      <title>Информационные ресурсы - база развития региона</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>1</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Артемов Н.И.</author>
+      <author>Панов А.Я.</author>
+      <title>Построение модели оценки качества программных средств</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Рубцов Ю.Ф.</author>
+      <author>Файзрахманов Р.А.</author>
+      <title>Динамические модели функционирования и управления производством</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Кириленко А.Г.</author>
+      <author>Низамутдинов О.Б.</author>
+      <title>Об одном подходе к построению автоматизированной системы управления энергоресурсами</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Файзрахманов Р.А.</author>
+      <author>Липатов И.Н.</author>
+      <title>Некоторые задачи управления производственным потоком</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Низамутдинов О.Б.</author>
+      <author>Липатов И.Н.</author>
+      <title>Построение и применение адаптивного цифрового фильтра в задаче управления материальным потоком</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Файзрахманов Р.А.</author>
+      <author>Мовчан В.П.</author>
+      <title>Задачи принятия решений в управлении дорожным движением</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Хомов К.Ю.</author>
+      <author>Патлусов Е.В.</author>
+      <title>АСУ "Карьера" - система для электронного подбора кадров с помощью Интернет</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Краснобаев В.А.</author>
+      <author>Краснобаев Л.А.</author>
+      <author>Севастьянов Н.П.</author>
+      <title>Применение штрихового кодирования для повышения кач-ва управления экономикой региона</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Петров Е.Ю.</author>
+      <title>Формулировка и подходы к решению некоторых задач оптимального управления мат потоком</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Кавера Т.Ю.</author>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <title>Существующие методы увеличение пропускной способности</title>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Файзрахманов Р.А.</author>
+      <author>Мовчан В.П.</author>
+      <title>Моделирование состояния транспортного потока - как объекта управления</title>
+      <published>Стратегия развития регионов: теория и практика, материалы международной науч. практ. конф-и, ч. 2</published>
+      <place>г. Пермь, ГосУниверситет - Высшая школа экономики, 1998 г.</place>
+      <pages>2</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Низамутдинов О.Б.</author>
+      <author>Андреев А.Г.</author>
+      <author>Гордеев М.В.</author>
+      <title>Распределенные микропроцессорные системы автоматизированного управления на Field Bus стан-в и их использование в аэрокосмической промышленности</title>
+      <published>Аэрокосмическая пр. России Сборник, сер. 2 Авионика, вып. 1</published>
+      <place>Санкт-Петербург, 1998 г. Нац. ассоциация пр-й</place>
+      <pages>6</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Д. Дитрих</author>
+      <author>Д. Лой</author>
+      <author>Х. Шванцер</author>
+      <author>(пер. с немец. Редактор рус. Перевода проф. Низамутдинов О. Б.)</author>
+      <title>LON-технология построения распределенных приложений</title>
+      <published>Книга</published>
+      <place>г. Пермь, ПГТУ, отдел электронных издательских систем, 1998 г.</place>
+      <pages>290 стр. (38 ил.)</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Долгова Е.В.</author>
+      <title>Моделирование транспортных потоков</title>
+      <published>Электрон. журнал "Вопросы автоматизированных и моделирующих систем", N1</published>
+      <place>г. Пермь, ПГТУ, 1998 г.</place>
+      <pages>3</pages>
+      <year>1998</year>
+    </item>
+    <item>
+      <author>Айтер Т.</author>
+      <author>Курушин Д.С.</author>
+      <author>Фабер В.</author>
+      <author>Финк М.</author>
+      <title>Обзор технологий и систем для извлечения и преобразования гетерогенных данных</title>
+      <published>European Commission, IST 2001-33570 (INFOMIX), D1.3, 2002, http://dks.colognet.org/review/d1.3.html англ. яз.</published>
+      <place>Вена, TU Wien, 2002 г.</place>
+      <pages>31</pages>
+      <year>2002</year>
+    </item>
+    <item>
+      <year>2002</year>
+      <author>Готтлоб Г.</author>
+      <author>Курушин Д.C.</author>
+      <author>Цересна М.</author>
+      <title>Рабочий план и дизайн-проект веб-портала и репозитария публикаций</title>
+      <published>European Comission, CoLogNET, WP5A4, D4.2, 2002,  англ. яз.</published>
+      <place>Вена, TU Wien, 2002 г.</place>
+      <pages>24</pages>
+    </item>
+    <item>
+      <year>2003</year>
+      <author>Готтлоб Г.</author>
+      <author>Курушин Д.C.</author>
+      <author>Саблякович В.</author>
+      <title>Усовершениствования в существующей реализации веб-портала и репозитария публикаций</title>
+      <published>European Comission, CoLogNET, WP5A4, D4.2, 2003, англ. яз.</published>
+      <place>Вена, TU Wien, 2003 г.</place>
+      <pages>24</pages>
+    </item>
+    <item>
+      <year>2003</year>
+      <author>Артемов С.П.</author>
+      <author>Гаспарян А.В.</author>
+      <author>Кузнецов Ю.М.</author>
+      <author>Низамутдинов О.Б.</author>
+      <author>Филаретов Г.Ф.</author>
+      <title>Концепция построения системы удаленного обучения современным технологиям автоматизации</title>
+      <published>Единая образовательная информационная среда. Выпуск N 1. Журнал МО РФ. 2003, http://emag.integro.ministry.ru/cgibin/index.php?num=104</published>
+      <place>Москва, 2003 г.</place>
+      <pages>3</pages>
+    </item>
+  </publications>
+</document>

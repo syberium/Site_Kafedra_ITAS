@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="koi8-r"?>
+<document>
+ <allTypes name="Дерево классификации информации" short-name="Классификация">
+  <companies name="Новости компаний" short-name="Компании">
+    <ibm name="IBM" short-name="IBM"/>
+    <microsoft name="Microsoft" short-name="Microsoft"/>
+    <oracle name="Oracle" short-name="Oracle"/>
+    <sap name="SAP" short-name="SAP"/>
+    <sun name="Sun Microsystems" short-name="SUN"/>
+  </companies>
+  <systems name="Системы" short-name="Системы">
+    <kis name="Корпоративные информационные системы" short-name="КИС">
+      <crm name="CRM" short-name="CRM"/>
+      <erp name="ERP" short-name="ERP"/>
+      <kisSurv name="Обзор корпоративных информационных систем" short-name="Обзор КИС"/>
+    </kis>
+    <asutp name="АСУ ТП" short-name="АСУ ТП"/>
+    <sapr name="САПР" short-name="САПР"/>
+    <gis name="Геоинформационные системы" short-name="ГИС"/>
+    <intlgS name="Интеллектуальные системы" short-name="Интеллектуальные системы"/>
+    <parallel name="Параллельные вычислительные системы" short-name="Параллельные выч. системы"/>
+  </systems>
+  <itSecurity name="Новости ИТ-безопасности" short-name="ИТ-безопасность">
+    <itSecVulnerabil name="Уязвимости" short-name="Уязвимости"/>
+    <itSecVirus name="Вирусы" short-name="Вирусы"/>
+    <itSecSurv name="Обзор. ИТ-безопасность" short-name="Обзор. ИТ-безопасность"/>
+  </itSecurity>
+  <net name="Сети" short-name="Сети">
+    <internet name="Интернет" short-name="Интернет"/>
+    <wirelessNet name="Безпроводные сети" short-name="Безпроводные сети"/>
+    <telecom name="Сети и телекоммуникации" short-name="Сети и телекоммуникации"/>
+  </net>
+  <soft  name="Программное обеспечение" short-name="ПО">
+    <develop name="Программирование" short-name="Программирование">
+      <dotNET name="Платформа Microsoft .NET" short-name="Платформа .NET"/>
+      <java name="Платформа Java" short-name="Java"/>
+      <developSurv name="Обзор. Программирование" short-name="Обзор. Программирование"/>
+    </develop>
+    <os name="Операционные системы" short-name="ОС">
+      <linux name="Linux" short-name="Linux"/>
+      <windows>
+        <winServer name="Windows Server" short-name="Windows Server"/>
+        <winVista name="Windows Vista" short-name="Windows Vista"/>
+        <windowsSurv name="Обзор. Windows" short-name="Обзор. Windows"/>
+      </windows>
+    </os>
+    <db name="Системы баз данных" short-name="БД">
+      <mySQL name="MySQL" short-name="MySQL"/>
+      <msSQLServer name="MS SQL Server" short-name="MS SQL Server">
+        <msSQLServer2005 name="MS SQL Server 2005" short-name="MS SQL Server 2005"/>
+        <msSQLServerSurv name="Обзор. MS SQL Server" short-name="Обзор. MS SQL Server"/>
+      </msSQLServer>
+    </db>
+    <msExchange name="Microsoft Exchange Server" short-name="Microsoft Exchange Server"/>
+    <softSurv name="Обзор программного обеспечения" short-name="Обзор ПО"/>
+  </soft>
+  <hard name="Аппаратное обеспечение" short-name="АО"/>
+  <science name="Новости науки и техники" short-name="Наука">
+    <scienceSurv name="Обзор. Новости науки и техники" short-name="Обзор"/>
+  </science>
+  <announc name="Новости кафедры" short-name="Новости кафедры"/>
+ </allTypes>
+</document>

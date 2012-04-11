@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project PUBLIC "-//Lixto//Project//EN"
+                         "http://www.lixto.com/vw/project.dtd">
+<Project version="3.40">
+    <ExtractionProgram maxDocDepth="-1" maxDocuments="-1"
+        rootPatternName="rootPattern" version="3.40">
+        <DocumentSourceDef description="" maxDocLength="-1"
+            maxInstances="-1" name="rootPattern" parentName="">
+            <ExtractionRules>
+                <DocumentExtractionRule description="" parent="">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <GetDocument description="" mimeType="default">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </GetDocument>
+                    </AtomChain>
+                </DocumentExtractionRule>
+            </ExtractionRules>
+        </DocumentSourceDef>
+        <StringSourceDef description="" maxInstances="-1" name="section" parentName="rootPattern">
+            <ExtractionRules>
+                <StringExtractionRule description="" parent="rootPattern">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubText description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <STD>
+                                <MixedSTD>
+                                    <Mixed content="\s"
+                                    occurrence="{1,1}" type="reg"/>
+                                </MixedSTD>
+                            </STD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubText>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </StringExtractionRule>
+            </ExtractionRules>
+        </StringSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="A" parentName="rootPattern">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="rootPattern">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="-1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="body"/>
+                                    <TreePathLink end_index="-1" id="1"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="table"/>
+                                    <TreePathLink end_index="-1" id="2"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="tr"/>
+                                    <TreePathLink end_index="-1" id="3"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="td"/>
+                                    <TreePathLink end_index="-1" id="4"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="table"/>
+                                    <TreePathLink end_index="-1" id="5"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="tr"/>
+                                    <TreePathLink end_index="-1" id="6"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="td"/>
+                                    <TreePathLink end_index="-1" id="7"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="table"/>
+                                    <TreePathLink end_index="-1" id="8"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="tr"/>
+                                    <TreePathLink end_index="-1" id="9"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="td"/>
+                                </TreePath>
+                                <Conditions>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="thin" type="Exact">
+                                    <AttributeDefinition
+                                    pattern="class" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                </Conditions>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <AtomChain>
+                        <Contains description="">
+                            <I>
+                                <Var name="1"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="DOT" typename="h1"/>
+                                </TreePath>
+                                <Conditions>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="\s{0,1}Новости\s{0,1}" type="RegExp">
+                                    <AttributeDefinition
+                                    pattern="elementtext" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                </Conditions>
+                            </ETD>
+                            <O>
+                                <Var name="2"/>
+                            </O>
+                        </Contains>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="NewsList" parentName="A">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="A">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="DOT" typename="table"/>
+                                </TreePath>
+                                <Conditions/>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="news" parentName="NewsList">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="NewsList">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubRegionExtended description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath/>
+                                <Conditions/>
+                            </ETD>
+                            <MTDL>
+                                <ElementMultiplicityList
+                                    First_Displayed_Element="0" Last_Displayed_Element="1">
+                                    <ElementMultiplicity greedy="false"
+                                    max="1" min="1" type_element="tr">
+                                    <Conditions>
+                                    <AttributeCondition>
+
+                                    <SimpleAttributeCondition
+                                    pattern="(^\S.*|^\s.+)" type="RegExp">
+                                    <AttributeDefinition
+                                    pattern="elementtext" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                    </Conditions>
+                                    </ElementMultiplicity>
+                                    <ElementMultiplicity greedy="false"
+                                    max="1" min="1" type_element="tr">
+                                    <Conditions>
+                                    <AttributeCondition>
+
+                                    <SimpleAttributeCondition
+                                    pattern="(^\S.*|^\s.+)" type="RegExp">
+                                    <AttributeDefinition
+                                    pattern="elementtext" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                    </Conditions>
+                                    </ElementMultiplicity>
+                                </ElementMultiplicityList>
+                            </MTDL>
+                            <ETD>
+                                <TreePath/>
+                                <Conditions/>
+                            </ETD>
+                            <ETD>
+                                <TreePath/>
+                                <Conditions/>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubRegionExtended>
+                    </AtomChain>
+                    <Range first="1" last="40"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="Head" parentName="news">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="news">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="DOT" typename="tr"/>
+                                </TreePath>
+                                <Conditions>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="(^\S.*|^\s.+)" type="RegExp">
+                                    <AttributeDefinition
+                                    pattern="elementtext" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                </Conditions>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="Desc" parentName="news">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="news">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="2" id="0"
+                                    inc_index="1" st_index="2"
+                                    star="STAR" typename="tr"/>
+                                </TreePath>
+                                <Conditions>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="(^\S.*|^\s.+)" type="RegExp">
+                                    <AttributeDefinition
+                                    pattern="elementtext" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                </Conditions>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="date" parentName="Head">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="Head">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="DOT" typename="td"/>
+                                    <TreePathLink end_index="1" id="1"
+                                    inc_index="1" st_index="1"
+                                    star="DOT" typename="p"/>
+                                </TreePath>
+                                <Conditions/>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <AtomChain>
+                        <Contains description="">
+                            <I>
+                                <Var name="1"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="-1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="content"/>
+                                </TreePath>
+                                <Conditions>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="date" type="Exact">
+                                    <AttributeDefinition
+                                    pattern="class" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                </Conditions>
+                            </ETD>
+                            <O>
+                                <Var name="2"/>
+                            </O>
+                        </Contains>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="title" parentName="Head">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="Head">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="DOT" typename="td"/>
+                                </TreePath>
+                                <Conditions/>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1"
+            name="copy_of_Title" parentName="Head">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="Head">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="DOT" typename="td"/>
+                                </TreePath>
+                                <Conditions/>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1"
+            name="Descrption" parentName="Desc">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="Desc">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="DOT" typename="td"/>
+                                    <TreePathLink end_index="1" id="1"
+                                    inc_index="1" st_index="1"
+                                    star="DOT" typename="p"/>
+                                </TreePath>
+                                <Conditions>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="(^\S.*|^\s.+)" type="RegExp">
+                                    <AttributeDefinition
+                                    pattern="elementtext" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                </Conditions>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <StringSourceDef description="" maxInstances="-1" name="day" parentName="date">
+            <ExtractionRules>
+                <StringExtractionRule description="" parent="date">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubText description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <STD>
+                                <MixedSTD>
+                                    <Mixed content="\b\d{1,2}\b"
+                                    occurrence="{1,1}" type="reg"/>
+                                </MixedSTD>
+                            </STD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubText>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </StringExtractionRule>
+            </ExtractionRules>
+        </StringSourceDef>
+        <StringSourceDef description="" maxInstances="-1" name="month" parentName="date">
+            <ExtractionRules>
+                <StringExtractionRule description="" parent="date">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubText description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <STD>
+                                <MixedSTD>
+                                    <Mixed content="\b\d{1,2}\b"
+                                    occurrence="{1,1}" type="reg"/>
+                                </MixedSTD>
+                            </STD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubText>
+                    </AtomChain>
+                    <Range first="2" last="2"/>
+                </StringExtractionRule>
+            </ExtractionRules>
+        </StringSourceDef>
+        <StringSourceDef description="" maxInstances="-1" name="year" parentName="date">
+            <ExtractionRules>
+                <StringExtractionRule description="" parent="date">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubText description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <STD>
+                                <MixedSTD>
+                                    <Mixed content="\d\d\d\d"
+                                    occurrence="{1,1}" type="reg"/>
+                                </MixedSTD>
+                            </STD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubText>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </StringExtractionRule>
+            </ExtractionRules>
+        </StringSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="Title1" parentName="title">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="title">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="2" id="0"
+                                    inc_index="1" st_index="2"
+                                    star="DOT" typename="p"/>
+                                </TreePath>
+                                <Conditions/>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <AtomChain>
+                        <Contains description="">
+                            <I>
+                                <Var name="1"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="-1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="content"/>
+                                </TreePath>
+                                <Conditions>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="" type="Contains">
+                                    <AttributeDefinition
+                                    pattern="href_full" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                </Conditions>
+                            </ETD>
+                            <O>
+                                <Var name="2"/>
+                            </O>
+                        </Contains>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="Title2" parentName="title">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="title">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="h1"/>
+                                </TreePath>
+                                <Conditions>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="(^\S.*|^\s.+)" type="RegExp">
+                                    <AttributeDefinition
+                                    pattern="elementtext" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="date" type="Exact">
+                                    <AttributeDefinition
+                                    pattern="class" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                </Conditions>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="B" parentName="copy_of_Title">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="copy_of_Title">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="2" id="0"
+                                    inc_index="1" st_index="2"
+                                    star="DOT" typename="p"/>
+                                </TreePath>
+                                <Conditions>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="(^\S.*|^\s.+)" type="RegExp">
+                                    <AttributeDefinition
+                                    pattern="elementtext" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                </Conditions>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <TreeSourceDef description="" maxInstances="-1" name="C" parentName="B">
+            <ExtractionRules>
+                <TreeExtractionRule description="" parent="B">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubElement description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <ETD>
+                                <TreePath>
+                                    <TreePathLink end_index="-1" id="0"
+                                    inc_index="1" st_index="1"
+                                    star="STAR" typename="content"/>
+                                </TreePath>
+                                <Conditions>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="(^\S.*|^\s.+)" type="RegExp">
+                                    <AttributeDefinition
+                                    pattern="elementtext" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                    <AttributeCondition>
+                                    <SimpleAttributeCondition
+                                    pattern="" type="Contains">
+                                    <AttributeDefinition
+                                    pattern="href_full" type="Exact"/>
+                                    </SimpleAttributeCondition>
+                                    </AttributeCondition>
+                                </Conditions>
+                            </ETD>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubElement>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </TreeExtractionRule>
+            </ExtractionRules>
+        </TreeSourceDef>
+        <StringSourceDef description="" maxInstances="-1" name="link" parentName="C">
+            <ExtractionRules>
+                <StringExtractionRule description="" parent="C">
+                    <Head description="">
+                        <I>
+                            <Var name="0"/>
+                        </I>
+                        <O>
+                            <Var name="1"/>
+                        </O>
+                    </Head>
+                    <AtomChain>
+                        <SubAttribute description="">
+                            <I>
+                                <Var name="0"/>
+                            </I>
+                            <A>
+                                <AttributeDefinition pattern="href_full" type="Exact"/>
+                            </A>
+                            <O>
+                                <Var name="1"/>
+                            </O>
+                        </SubAttribute>
+                    </AtomChain>
+                    <Range first="1" last="1"/>
+                </StringExtractionRule>
+            </ExtractionRules>
+        </StringSourceDef>
+    </ExtractionProgram>
+    <parameters version="1.21"/>
+    <XMLWriterRuleSet version="2.2">
+        <globalWriteRules customValidationWarning=""
+            maximumNumberOfDocuments="-1" minimumNumberOfDocuments="-1"
+            parentInfoWriteMode="parent_info_none" writeMode="global_embedded_write_mode_embedded"/>
+        <pattern name="Desc">
+            <ConstrainedRule sortedChildren="False" writeChildren="True" writeMe="False"/>
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="B">
+            <ConstrainedRule sortedChildren="False" writeChildren="True" writeMe="False"/>
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="Head">
+            <ConstrainedRule sortedChildren="False" writeChildren="True" writeMe="False"/>
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="date">
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="C">
+            <ConstrainedRule sortedChildren="False" writeChildren="True" writeMe="False"/>
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="section">
+            <ContentModifyingRule contentAfterString=""
+                contentBeforeString="sapr" cutNonBreakingSpace="True"
+                mixedContent="False" tagString=""
+                textCase="textoutput_default" trimWhiteSpace="True" writeText="write_text_if_leaf">
+                <TaskScheduler contentBeforeAfter="1"
+                    patternExtraction="4" textCase="2"
+                    textSubstitution="3" whiteSpaces="0"/>
+                <ContentIntoTextSubNode>true</ContentIntoTextSubNode>
+                <ContentIntoAttribute>false</ContentIntoAttribute>
+                <ContentIntoHTMLSubDOM>false</ContentIntoHTMLSubDOM>
+            </ContentModifyingRule>
+        </pattern>
+        <pattern name="news">
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="title">
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="copy_of_Title">
+            <ConstrainedRule sortedChildren="False" writeChildren="True" writeMe="False"/>
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="A">
+            <ConstrainedRule sortedChildren="False" writeChildren="True" writeMe="False"/>
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="NewsList">
+            <ConstrainedRule sortedChildren="False" writeChildren="True" writeMe="False"/>
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="rootPattern">
+            <ConstrainedRule sortedChildren="False" writeChildren="True" writeMe="False"/>
+            <ContentModifyingRule tagString="" writeText="never_write_text"/>
+        </pattern>
+        <pattern name="Title2">
+            <ContentModifyingRule contentAfterString=")"
+                contentBeforeString=" (" cutNonBreakingSpace="True"
+                mixedContent="True" tagString=""
+                textCase="textoutput_default" trimWhiteSpace="True" writeText="write_text_if_leaf">
+                <TaskScheduler contentBeforeAfter="1"
+                    patternExtraction="4" textCase="2"
+                    textSubstitution="3" whiteSpaces="0"/>
+                <ContentIntoTextSubNode>true</ContentIntoTextSubNode>
+                <ContentIntoAttribute>false</ContentIntoAttribute>
+                <ContentIntoHTMLSubDOM>false</ContentIntoHTMLSubDOM>
+            </ContentModifyingRule>
+        </pattern>
+    </XMLWriterRuleSet>
+    <options version="2.21">
+        <subgroup name="docload">
+            <option name="default_html_charset" type="string" value="iso-8859-1"/>
+            <option name="xml_tag_mangling" type="boolean" value="false"/>
+            <subgroup name="regexp_mangling">
+                <option name="out" type="string" value="$1$2$3$4"/>
+                <option name="in" type="string" value="(.*)&lt;/html>(.*)(&lt;/html>)(.*)"/>
+                <option name="apply" type="boolean" value="false"/>
+            </subgroup>
+            <option name="max_size" type="numeric" value="3145728"/>
+            <option name="force_default_encoding" type="boolean" value="false"/>
+        </subgroup>
+        <subgroup name="network">
+            <option name="http_user_agent" type="string" value="Mozilla/4.77 [en]"/>
+            <option name="http_request_timeout" type="numeric" value="6000"/>
+            <option name="accept_untrusted_certificates" type="boolean" value="true"/>
+        </subgroup>
+        <subgroup name="conversion">
+            <option name="csv_mime_type" type="string" value="text/comma-separated-values"/>
+            <subgroup name="advanced_pdf">
+                <option name="threshold_y" type="numeric" value="0"/>
+                <option name="threshold_x" type="numeric" value="0"/>
+                <option name="consider_table" type="boolean" value="true"/>
+                <option name="end_on" type="boolean" value="true"/>
+                <option name="start_on" type="boolean" value="true"/>
+                <option name="end_page" type="numeric" value="0"/>
+                <option name="use" type="boolean" value="false"/>
+                <option name="st_page" type="numeric" value="0"/>
+            </subgroup>
+            <option name="csv_field_separator" type="string" value=","/>
+            <option name="oo_rows_start" type="numeric" value="1"/>
+            <option name="oo_columns_end" type="numeric" value="-1"/>
+            <option name="oo_column_from" type="boolean" value="false"/>
+            <option name="oo_columns_start" type="numeric" value="1"/>
+            <option name="pdftohtml_postprocessing" type="boolean" value="true"/>
+            <option name="csv_record_separator" type="string" value="\n"/>
+            <option name="default_oo_sheetname" type="string" value=""/>
+            <option name="oo_rows_end" type="numeric" value="-1"/>
+            <option name="oo_row_from" type="boolean" value="false"/>
+            <option name="csv_force_conversion" type="boolean" value="false"/>
+        </subgroup>
+        <subgroup name="xml">
+            <option name="default_xml_charset" type="string" value="UTF-8"/>
+        </subgroup>
+        <subgroup name="evaluation">
+            <option name="max_time_execution" type="numeric" value="10"/>
+            <option name="max_script_length" type="numeric" value="100"/>
+        </subgroup>
+    </options>
+    <DocumentRepository version="2.21">
+        <StoredDocumentData current="true"
+            description="http://www.cad.ru/ru/press-centre/news/index.php" type="singledoc">
+            <RequestURI IsPathRelative="false">http://www.cad.ru/ru/press-centre/news/index.php</RequestURI>
+            <Cookies/>
+        </StoredDocumentData>
+    </DocumentRepository>
+    <Syntax_concepts default="true"/>
+    <Semantic_concepts default="true"/>
+</Project>

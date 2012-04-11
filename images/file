@@ -1,0 +1,48 @@
+img.text-dpt {
+ position: relative;
+ width: 225px;
+ height: 60px;
+ top: 0px;
+ left: 0px;
+}
+
+img.text-enr {
+ position: relative;
+ width: 147px;
+ height: 10px;
+ top: 0px;
+ left: 0px;
+}
+
+img.text-prt {
+ position: relative;
+ width: 110px;
+ height: 10px;
+ top: 0px;
+ left: 0px;
+}
+
+img.text-pstu {
+ position: relative;
+ width: 134px;
+ height: 18px;
+ top: 0px;
+ left: 0px;
+}
+
+img.text-sci {
+ position: relative;
+ width: 59px;
+ height: 10px;
+ top: 0px;
+ left: 0px;
+}
+
+img.text-std {
+ position: relative;
+ width: 108px;
+ height: 11px;
+ top: 0px;
+ left: 0px;
+}
+
